@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilidades</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="habilidades.css">
+</head>
+<body>
+    <div class="menu-video">
+        <img src="assets/videos/menu-1--unscreen.gif" alt="Menu">
+        <p>Menu</p>
+    </div>
+    <header class="navbar collapsed">
+        <div class="home-icon">
+            <a href="index.html">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxcmVtIiBoZWlnaHQ9IjFyZW0iIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Im0xMi43MDcgMi4yOTNsOSA5Yy42My42My4xODQgMS43MDctLjcwNyAxLjcwN2gtMXY2YTMgMyAwIDAgMS0zIDNoLTF2LTdhMyAzIDAgMCAwLTIuODI0LTIuOTk1TDEzIDEyaC0yYTMgMyAwIDAgMC0zIDN2N0g3YTMgMyAwIDAgMS0zLTN2LTZIM2MtLjg5IDAtMS4zMzctMS4wNzctLjcwNy0xLjcwN2w5LTlhMSAxIDAgMCAxIDEuNDE0IDBNMTMgMTRhMSAxIDAgMCAxIDEgMXY3aC00di03YTEgMSAwIDAgMSAuODgzLS45OTNMMTEgMTR6Ii8+PC9zdmc+" alt="Home">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="sobre-mim.html">Sobre mim</a></li>
+                <li><a href="#experiencias">Experiências</a></li>
+                <li><a href="habilidades.html" class="active">Habilidades</a></li>
+                <li><a href="#curriculo">Currículo</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contate-me">Contate-me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="habilidades-container">
+        <div class="orange-rectangle">
+            <div class="rectangle-content">
+                <img id="selected-icon" src="" alt="Selected Skill Icon" style="display:none;">
+                <div class="skill-details" style="display:none;">
+                    <div class="skills">
+                        <div class="skill-info">
+                            <h3>Nível de Habilidade</h3>
+                            <p>Detalhes sobre o nível de habilidade.</p>
+                        </div>
+                        <div class="skill-info">
+                            <h3>Experiências</h3>
+                            <p>Detalhes sobre experiências.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="skills-list">
+            <div class="skill-item" onclick="showSkillDetails('python')">
+                <img src="assets/images/python_icone.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="skill-item" onclick="showSkillDetails('html')">
+                <img src="assets/images/html-5-icon.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill-item" onclick="showSkillDetails('css')">
+                <img src="assets/images/css-icon.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill-item" onclick="showSkillDetails('javascript')">
+                <img src="assets/images/javascript-logo.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-item" onclick="showSkillDetails('mysql')">
+                <img src="assets/images/database-mysql.svg" alt="MySQL">
+                <p>MySQL</p>
+            </div>
+            <div class="skill-item" onclick="showSkillDetails('office')">
+                <img src="assets/images/escritorio.png" alt="Office">
+                <p>Office</p>
+            </div>
+        </div>
+    </div>
+    <script src="habilidades.js"></script>
+</body>
+</html>

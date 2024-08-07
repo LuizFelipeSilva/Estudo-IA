@@ -1,0 +1,119 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: black; /* Fundo preto */
+    color: white; /* Texto branco */
+    background: radial-gradient(circle at top left, rgba(0, 0, 128, 0.2), transparent), 
+                radial-gradient(circle at bottom right, rgba(0, 0, 128, 0.3), transparent),
+                black; /* Gradientes simulando manchas */
+}
+
+header.navbar {
+    position: absolute;
+    top: 30px; /* Alinhamento com o menu */
+    left: 110px; /* Espaçamento à direita do menu */
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.5s ease;
+    visibility: hidden; /* Esconde a navbar por padrão */
+}
+
+header.navbar.expanded {
+    visibility: visible; /* Mostra a navbar quando expandida */
+    margin-left: 40px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar nav ul li {
+    margin: 10px;
+}
+
+.navbar nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: background-color 0.5s, border-radius 1s ease-in-out;
+}
+
+.navbar nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+}
+
+.menu-video {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 2;
+    text-align: center;
+}
+
+.menu-video img {
+    width: 60px;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.menu-video p {
+    color: white;
+    font-size: 1em;
+    margin: 0;
+}
+
+.sobre-mim-container {
+    display: flex;
+    height: 110vh;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: flex-end;
+    justify-content: flex-end; /* Alinha a imagem ao canto inferior direito */
+}
+
+.imagem-container {
+    position: relative;
+    height: 100vh;
+    width: 40vw;
+}
+
+.imagem-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Mantém a proporção da imagem */
+    border-bottom-left-radius: 100px; /* Bordas redondas no canto superior esquerdo */
+    border-top-right-radius: 20px; /* Bordas redondas no canto inferior direito */
+}
+
+.imagem-container .overlap {
+    position: absolute;
+    left: -50%; /* Move 10% da largura para a esquerda */
+    bottom: 45%; /* Move metade da altura para cima */
+    height: 50%; /* Define a altura como metade da imagem base */
+    width: auto;
+    border-top-left-radius: 20px; /* Bordas redondas no canto superior esquerdo */
+    border-bottom-right-radius: 20px; /* Bordas redondas no canto inferior direito */
+}
+
+/* Adiciona coloração laranja claro ao link "Sobre mim" */
+.navbar nav ul li a.active {
+    color: #FFA500; /* Laranja claro */
+}
